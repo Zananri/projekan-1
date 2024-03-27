@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengguna</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .card-body {
+            background-image: url('bc-login.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .arrow a {
+            display: flex;
+            text-decoration: none;
+            color: black;
+            margin-right: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="head d-flex">
+                            <div class="arrow">
+                                <a href="/">
+                                    <i class="fa-solid fa-angle-left fa-2x"></i>
+                                </a>
+                            </div>
+                            <div class="atas" style="font-family: sans-serif; margin:auto; margin-bottom: 10vh; ">
+                                <a href="/" class="text-decoration-none" style="margin: auto; color: black;">
+                                    <h2>Agen <b>Pulsa</b></h2>
+                                </a>
+                            </div>
+                            <div class="atas">
+                                <a href="/cs" style="color: black;">
+                                    <h2><i class="fas fa-headset"></i></h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card text-center"
+                            style="width: 18rem; margin: auto; font-family: sans-serif; padding: 3vh;">
+                            <div class="card-body-register">
+                                <form method="POST" action="/register">
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            <input type="text" class="form-control" id="nama" name="nama"
+                                                placeholder="Masukkan nama Anda" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Masukkan email Anda" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+                                            <input type="text" class="form-control" id="no_telp" name="no_telp"
+                                                placeholder="Masukkan no HP Anda" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger"
+                                        style="width: 15rem; margin-bottom: 10px; margin-top: 15px;">Registrasi</button>
+                                </form>
+                                <a href="#">Lupa kata sandi?</a>
+                                <b>
+                                    <p style="margin-top: 10px;">- Atau -</p>
+                                </b>
+                                <a href=""><i class="fab fa-google"
+                                        style="font-size: 30px; color: red; margin-right: 15px;"></i></a>
+                                <a href=""><i class="fab fa-apple" style="font-size: 35px; color: black;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
