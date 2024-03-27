@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Pengguna</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    .icon-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .icon-item p {
+        margin-top: 5px;
+    }
+
+    .icon-item a {
+        color: #7C7C7C;
+
+    }
+
+    .daily .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .daily .container .icon-item {
+        flex-basis: calc(30% - 30px);
+        text-align: center;
+    }
+
+    .vocard .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vocard .container .icon-item {
+        flex-basis: calc(30% - 30px);
+        text-align: center;
+    }
+
+    .tagihan .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tagihan .container .icon-item {
+        flex-basis: calc(30% - 30px);
+        text-align: center;
+    }
+
+    .bill .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bill .container .icon-item {
+        flex-basis: calc(30% - 30px);
+        text-align: center;
+    }
+
+    .bill .container .icon-item img {
+        width: 55px;
+        height: 25px;
+    }
+
+    .others .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .others .container .icon-item {
+        flex-basis: calc(30% - 30px);
+        text-align: center;
+    }
+
+    .others .container .icon-item img {
+        width: 80px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <div class="container" style="margin-bottom: 145rem;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body" style="background-color: #FF003D;">
+                        <div class="mb-9 d-flex" style="color:white;">
+                            <i class="fas fa-user fa-2x" style="margin-top: 5px;"></i>
+                            <!-- Ikon pengguna dengan ukuran dua kali lipat -->
+                            <p style="font-size: 24px; color: #FFFFFF; margin-left: 15px; margin-top: 5px;">
+                                Hai, User
+                            </p>
+                            <div class="side" style="margin-top: 7px; margin-left:auto;">
+                                <i class="fas fa-bell fa-2x"></i>
+                                <button class="btn btn-warning" style="border-radius:30px; margin-bottom:10px;"><a
+                                        href="/riwayat" style="text-decoration:none; color:white;">0 Trx</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="red" style="background-color: #FF003D; height:70px; margin-bottom:auto; padding: 20px;">
+                        <div class="card"
+                            style="color: #7C7C7C; padding:5px; width:auto; margin:auto; margin-top:10px;">
+                            <div class="container">
+                                <div class="card-body-home">
+                                    <div class="col-md-6">
+                                        <h5>Saldo Mitra</h5>
+                                        <h4>RP 0</h4>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="icon-item">
+                                        <a href="#">
+                                            <i class="far fa-clock fa-2x"></i>
+                                        </a>
+                                        <p>Riwayat</p>
+                                    </div>
+                                    <div class="icon-item">
+                                        <a href="#">
+                                            <i class="fas fa-clipboard fa-2x mx-3"></i>
+                                        </a>
+                                        <p>Catatan</p>
+                                    </div>
+                                    <div class="icon-item">
+                                        <a href="#">
+                                            <i class="fas fa-headset fa-2x"></i>
+                                        </a>
+                                        <p>Hubungi Kami</p>
+                                    </div>
+                                    <div class="icon-item">
+                                        <a href="#">
+                                            <i class="fas fa-money-bill-wave fa-2x"></i>
+                                        </a>
+                                        <p>Isi Saldo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card"
+                            style="color: #7C7C7C; padding:5px; width:auto; margin:auto; margin-top:10px; margin-bottom:20px;">
+                            <div class="container d-flex">
+                                <div class="card-body-home-two">
+                                    <h6 style="color: red;"><b>Punya kendala?</b></h6>
+                                    <h6 style="margin-bottom: 1px;">Kamu bisa menghubungi</h6>
+                                    <h6 style="margin-bottom: 5px;">tim customer service kami</h6>
+                                </div>
+                                <a href="#" style="margin-left:auto;">
+                                    <img src="csbg.jpg" alt="bccs" style="width: 80px; height:75px;">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="daily">
+                            <h5>Isi Ulang Sehari-hari</h5>
+                            <hr>
+                            <div class="container align-items-center">
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-mobile-alt fa-2x" style="color: #00224D;"></i>
+                                    </a>
+                                    <p>Isi Pulsa</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-wifi fa-2x" style="color:#A3BDFF;"></i>
+                                    </a>
+                                    <p>Paket Internet</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-phone fa-2x" style="color: #5E8BFF;"></i>
+                                    </a>
+                                    <p>Paket Telp</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-comment-dots fa-2x" style="color:#FB54E0;"></i>
+                                    </a>
+                                    <p>Paket SMS</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-lightbulb fa-2x" style="color: #FDA403;"></i>
+                                    </a>
+                                    <p>Token PLN</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-sim-card fa-2x" style="color: #87A922;"></i>
+                                    </a>
+                                    <p>Masa Aktif</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-sim-card fa-2x" style="color: #87A922;"></i>
+                                    </a>
+                                    <p>Info Kartu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="vocard">
+                            <h5>Voucher dan Kartu Perdana</h5>
+                            <hr>
+                            <div class="container align-items-center">
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-newspaper fa-2x"></i>
+                                    </a>
+                                    <p>Cek Status Voucher</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-ticket fa-2x" style="color: #FDA403;"></i> </a>
+                                    <p>Voucher Internet</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-ticket fa-2x" style="color: #FDA403;"></i> </a>
+                                    <p>Aktivasi Voucher</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-sim-card fa-2x" style="color: #87A922;"></i>
+                                    </a>
+                                    <p>Inject Kartu Perdana</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="tagihan">
+                            <h5>Tagihan</h5>
+                            <hr>
+                            <div class="container align-items-center">
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-notes-medical fa-2x" style="color:#FF003D;"></i> </a>
+                                    <p>BPJS</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gas-pump fa-2x" style="color:#387ADF;"></i>
+                                    </a>
+                                    <p>Gas Negara (PGN)</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gas-pump fa-2x" style="color:#387ADF;"></i>
+                                    </a>
+                                    <p>Pertagas (GAS)</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-laptop fa-2x" style="color: #FF004D;"></i>
+                                    </a>
+                                    <p>Telkom / Indihome</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-tv fa-2x" style="color: #40679E;"></i>
+                                    </a>
+                                    <p>PLN</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fas fa-mobile-alt fa-2x" style="color: #00224D;"></i>
+                                    </a>
+                                    <p>Tagihan Seluler</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-clipboard-list fa-2x"></i>
+                                    </a>
+                                    <p>Cicilan Finance</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-globe fa-2x" style="color: #50C4ED;"></i>
+                                    </a>
+                                    <p>Internet Bulanan</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-water fa-2x" style="color: #387ADF;"></i>
+                                    </a>
+                                    <p>PDAM</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-water fa-2x" style="color: #387ADF;"></i>
+                                    </a>
+                                    <p>PDAM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="bill">
+                            <h5>Tagihan</h5>
+                            <hr>
+                            <div class="container align-items-center">
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-wallet fa-2x" style="color: #00B07B;"></i>
+                                    </a>
+                                    <p>Bebas Nominal</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="dana.png" alt="DANA">
+                                    </a>
+                                    <p>Dana</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="ovo.png" alt="OVO">
+                                    </a>
+                                    <p>OVO</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="linkaja.png" alt="LINKAJA">
+                                    </a>
+                                    <p>Link Aja</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="shopeepay.png" alt="SHOPEEPAY">
+                                    </a>
+                                    <p>ShopeePay</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="shopeepay.png" alt="SHOPEEPAY">
+                                    </a>
+                                    <p>Shopee Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="maxim.jpg" alt="MAXIM">
+                                    </a>
+                                    <p>Maxim Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="maxim.jpg" alt="MAXIM">
+                                    </a>
+                                    <p>Maxim Customer</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="grab.png" alt="GRAB">
+                                    </a>
+                                    <p>Grab Penumpang</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="gojek.png" alt="GOJEK">
+                                    </a>
+                                    <p>Gojek Penumpang</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="grab.png" alt="GRAB">
+                                    </a>
+                                    <p>Grab Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="gojek.png" alt="GOJEK">
+                                    </a>
+                                    <p>Gojek Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="doku.png" alt="DOKU">
+                                    </a>
+                                    <p>Gojek Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="sakuku.jpg" alt="SAKUKU">
+                                    </a>
+                                    <p>Gojek Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="isaku.png" alt="ISAKU">
+                                    </a>
+                                    <p>Gojek Driver</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-wallet fa-2x" style="color: #124076;"></i>
+                                    </a>
+                                    <p>Info Ewallet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="others">
+                            <h5>Produk Lainnya</h5>
+                            <hr>
+                            <div class="container align-items-center">
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-ticket fa-2x" style="color: #00B2FF;"></i>
+                                    </a>
+                                    <p>Saldo MTIX XXI</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="tapcash.jpg" alt="TAPCASH">
+                                    </a>
+                                    <p>BNI Tap Cash</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="brizzi.png" alt="BRIZZI">
+                                    </a>
+                                    <p>BRI Brizzi</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="emoney.png" alt="EMONEY">
+                                    </a>
+                                    <p>Mandiri Emoney</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="wifiid.png" alt="WIFIID">
+                                    </a>
+                                    <p>Wifi Id</p>
+                                </div>
+                                <div class="icon-item">
+                                    <a href="#">
+                                        <img src="pertagas.png" alt="PERTAGAS">
+                                    </a>
+                                    <p>Token Pertagas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
