@@ -13,20 +13,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .card-body {
-            background-image: url('bc-login.jpg');
+            /* background-image: url('bc-login.jpg'); */
+            background-color: #FF003D;
             background-repeat: no-repeat;
+            border-radius: 0px 0px 50px 50px;
             background-size: cover;
-            height: 100vh;
+            height: 65vh;
+            
         }
 
-        body {
-            overflow: hidden;
+        .card{
+            border-radius: 0px 0px 50px 50px ;
         }
+
+       
 
         .arrow a {
             display: flex;
             text-decoration: none;
-            color: black;
+            color: white;
             margin-right: -10px;
         }
     </style>
@@ -44,18 +49,22 @@
                                     <i class="fa-solid fa-angle-left fa-2x"></i>
                                 </a>
                             </div>
-                            <div class="atas" style="font-family: sans-serif; margin:auto; margin-bottom: 10vh; ">
-                                <a href="/" class="text-decoration-none" style="margin: auto; color: black;">
+                            <div class="atas" style="font-family: sans-serif; margin:auto; margin-bottom: 1vh; ">
+                                <a href="/" class="text-decoration-none" style="margin: auto; color: white;">
                                     <h2>Agen <b>Pulsa</b></h2>
                                 </a>
                             </div>
                             <div class="atas">
-                                <a href="/cs" style="color: black;">
+                                <a href="/cs" style="color: white;">
                                     <h2><i class="fas fa-headset"></i></h2>
                                 </a>
                             </div>
                         </div>
-                        <div class="card text-center"
+                        <h2 class="text-white">Register</h2>
+                        <p class="text-white">Silahkan melengkapi data untuk melakukan
+                        pendaftaran ke aplikasi Pulsabayar</p>
+
+                        <div class="card text-center mt-5"
                             style="width: 18rem; margin: auto; font-family: sans-serif; padding: 3vh;">
                             <div class="card-body-register">
                                 <form method="POST" action="/register">
