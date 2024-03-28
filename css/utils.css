@@ -33,6 +33,10 @@ body{
 
 .option.payment{
     border-bottom: none;
+
+    img{
+        width: 100px;
+    }
 }
 
 .option:hover {
