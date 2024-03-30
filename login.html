@@ -13,10 +13,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .card-body {
-            background-image: url('bc-login.jpg');
+            /* background-image: url('bc-login.jpg'); */
+            background-color: #FF003D;
             background-repeat: no-repeat;
+            border-radius: 0px 0px 90px 90px;
             background-size: cover;
-            height: 100vh;
+            height: 500px;
+            
+        }
+
+        .card{
+            border-radius: 15px 15px 90px 90px ;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
         }
 
         body {
@@ -32,23 +42,29 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="head d-flex">
-                            <div class="arrow" style="margin-right: -10px;">
-                                <a href="/" class="d-flex text-decoration-none" style="color: black;">
-                                    <i class="fa-solid fa-angle-left fa-2x"></i>
+                            <div class="arrow">
+                                <a href="/">
+                                    <i class="fa-solid fa-angle-left fa-2x" style="color: white;"></i>
                                 </a>
                             </div>
-                            <div class="atas" style="font-family: sans-serif; margin:auto; margin-bottom: 20vh; ">
-                                <a href="/" class="text-decoration-none" style="margin: auto; color: black;">
+                            <div class="atas" style="font-family: sans-serif; margin:auto; margin-bottom: 1vh; ">
+                                <a href="/" class="text-decoration-none" style="margin: auto; color: white;">
                                     <h2>Agen <b>Pulsa</b></h2>
                                 </a>
                             </div>
                             <div class="atas">
-                                <a href="/cs" style="color: black;">
+                                <a href="/cs" style="color: white;">
                                     <h2><i class="fas fa-headset"></i></h2>
                                 </a>
                             </div>
                         </div>
-                        <div class="card text-center"
+
+                        <div class="col-12" style="margin-left: 15px; margin-bottom: 120px; margin-top: 25px;">
+                            <h2 class="text-white">Login</h2>
+                            <p class="text-white">Silahkan login ke akun Agen Pulsa</p>
+                        </div>
+
+                        <div class="card text-center mt-5"
                             style="width: 18rem; margin: auto; font-family: sans-serif; padding: 3vh;">
                             <div class="card-body-login">
                                 <form method="POST" action="/login">
@@ -56,7 +72,7 @@
                                         <div class="input-group">
                                             <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
                                             <input type="text" class="form-control" id="no_telp" name="no_telp"
-                                                placeholder="Masukkan nomor HP Anda" required>
+                                                placeholder="Masukkan Nomor HP Anda" required>
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -66,8 +82,8 @@
                                                 placeholder="Password" required>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-danger"
-                                        style="width: 15rem; margin-bottom: 10px; margin-top: 15px;">Login</button>
+                                    <button type="submit" class="btn"
+                                        style="width: 15rem; margin-bottom: 10px; margin-top: 15px; background-color: #E10000; color: white;">Login</button>
                                 </form>
                                 <a href="#">Lupa kata sandi?</a>
                                 <b>
